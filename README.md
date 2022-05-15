@@ -1,5 +1,14 @@
 # llvm_toy
 
+
+1. Compile llvm lib command
+
+==> cmake -S llvm -B build -G "Unix Makefiles" -DLLVM_ENABLE_PROJECTS='clang;clang-tools-extra;cross-project-tests;flang;libclc;lld;lldb;mlir;openmp;polly;pstl'  -DLLVM_ENABLE_RUNTIMES='libcxx;libcxxabi;libunwind;compiler-rt;libc' -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/tzuping/install/llvm/14.0.3
+==> cd build && make -j4
+
+
+2. Build application for llvm lib
+
 mkdir build<br>
 <br>
 cd build<br>
